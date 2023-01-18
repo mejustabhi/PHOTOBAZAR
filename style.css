@@ -1,0 +1,190 @@
+body{
+    background-color:rgb(99, 169, 147)
+}
+#navBar{
+    background-color:#232F3E;
+    height:100px;
+    color:white
+  }
+  #topHalf{
+    height:50px;
+  }
+  #bottomHalf{
+    height:50px
+  }
+  #logo{
+    height:100px;
+    position:absolute;
+    top:-25px
+    
+  }
+  #logoWrapper{
+    margin-bottom:20px;
+    display:inline-block;
+    position:relative;
+    width:150px;
+    
+  }
+  #backToSchool{
+    height:50px;
+    float:right;
+    margin-right:20px
+    
+  }
+  input{
+    vertical-align:top;
+    margin-top:10px;
+    border-radius:10px;
+    height:20px;
+    width:500px;
+  }
+  #department{
+    font-size:25px;
+    padding:10px;
+    margin-left:30px;
+    font-weight:bold;
+    display:inline-block;
+    vertical-align:top;
+    margin-top:10px
+  }
+  #sections{
+    display:inline-block
+  }
+  .section{
+    display:inline-block;
+    vertical-align:top;
+    font-size:15px;
+    margin-top:25px;
+    margin-left:10px
+  }
+  #accountStuff{
+    display:inline-block;
+    float:right;
+    margin-right:20px
+  }
+  // -----------------------------
+// PHOTOBAZAR Shared Footer
+// -----------------------------
+
+// Variables
+@bp-850: ~"only screen and (max-width: 850px)";
+@PHOTOBAZAR-grey: #ddd;
+@PHOTOBAZAR-grey--dark: #231F20;
+@PHOTOBAZAR-border: #333;
+
+
+// PHOTOBAZARFooter
+// -----------------------------
+
+.PHOTOBAZAR-footer {
+  background-color: @PHOTOBAZAR-grey--dark;
+}
+.PHOTOBAZAR-footer-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.PHOTOBAZAR-footer-logo-image {
+  max-width: 160px;
+}
+
+// Footer Columns
+.PHOTOBAZAR-row {
+  display: flex;
+  justify-content: space-between;
+}
+.PHOTOBAZAR-col {
+  &--20 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+  &--30 {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+  @media @tablet {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+// Footer Lists
+.PHOTOBAZAR-footer-lists {
+  padding: 40px 0;
+}
+.PHOTOBAZAR-footer-list-item {
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Typography
+.PHOTOBAZAR-footer-title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+}
+.PHOTOBAZAR-footer-text {
+  font-size: 13px;
+  line-height: 20px;
+  color: @PHOTOBAZAR-grey;
+}
+.PHOTOBAZAR-footer-link {
+  font-size: 13px;
+  line-height: 20px;
+  color: @PHOTOBAZAR-grey;
+  &:hover {
+    color: white;
+  }
+}
+
+// Sub Footer
+.PHOTOBAZAR-sub-footer {
+  padding: 12px 0;
+  border-top: 1px solid @PHOTOBAZAR-border;
+  line-height: 0;
+  
+  .PHOTOBAZAR-col:last-child {
+    text-align: right;
+  }
+  .PHOTOBAZAR-footer-list-item {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  .PHOTOBAZAR-footer-link:hover {
+    color: white;
+  }
+  .PHOTOBAZAR-footer-link,
+  .PHOTOBAZAR-footer-text {
+    font-size: 12px;
+    color: #999;
+  }
+}
+
+
+
+
+// IGNORE
+body {
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+}
+ul, li, h4, p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.PHOTOBAZAR-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+@tablet: ~"only screen and (max-width: 769px)";
+@mobile: ~"only screen and (max-width: 480px)";
